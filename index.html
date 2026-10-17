@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101922">
+  <meta name="description" content="RAMsleep freezes heavy Windows programs while keeping them open, then wakes them when you return. Available for $2 on itch.io.">
+  <title>RAMsleep — Free up RAM without closing your apps</title>
+  <style>
+    :root { color-scheme: dark; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background: #101922; color: #f5f8fa; }
+    * { box-sizing: border-box; }
+    body { margin: 0; line-height: 1.55; }
+    a { color: inherit; }
+    .wrap { width: min(1080px, calc(100% - 40px)); margin: auto; }
+    header { border-bottom: 1px solid #314352; }
+    nav { min-height: 74px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { font-size: 1.35rem; font-weight: 800; letter-spacing: -.03em; text-decoration: none; }
+    .pill { color: #94e6cf; font-size: .86rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    .hero { padding: 78px 0 58px; display: grid; gap: 36px; }
+    h1 { font-size: clamp(2.6rem, 7vw, 5rem); line-height: 1.05; letter-spacing: -.055em; max-width: 850px; margin: 16px 0 20px; }
+    h2 { font-size: clamp(1.65rem, 3vw, 2.2rem); letter-spacing: -.03em; margin: 0 0 18px; }
+    p { margin: 0 0 20px; }
+    .lead { color: #c3d0d9; font-size: 1.24rem; max-width: 720px; }
+    .actions { display: flex; align-items: center; flex-wrap: wrap; gap: 16px; margin-top: 28px; }
+    .button { display: inline-block; background: #67ddbc; color: #0d1d1a; padding: 14px 22px; border-radius: 10px; font-weight: 800; text-decoration: none; box-shadow: 0 8px 28px #042f2855; }
+    .button:hover, .button:focus-visible { background: #9df5db; }
+    .price { color: #c3d0d9; }
+    .screen { display: block; width: 100%; height: auto; border: 1px solid #50616b; border-radius: 12px; box-shadow: 0 24px 70px #0008; }
+    section { padding: 45px 0; border-top: 1px solid #314352; }
+    .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; }
+    .card { background: #192632; border: 1px solid #314352; padding: 24px; border-radius: 12px; }
+    .card h3 { margin: 0 0 10px; font-size: 1.12rem; }
+    .card p, .muted { color: #b7c6cf; }
+    .card p { margin: 0; }
+    .closing { display: flex; align-items: center; justify-content: space-between; gap: 30px; }
+    footer { padding: 28px 0 46px; color: #91a3b0; font-size: .9rem; }
+    @media (max-width: 700px) { .hero { padding-top: 55px; } .grid { grid-template-columns: 1fr; } .closing { align-items: flex-start; flex-direction: column; gap: 6px; } }
+  </style>
+</head>
+<body>
+  <header><nav class="wrap"><a class="brand" href="#top">RAMsleep</a><span class="pill">For Windows</span></nav></header>
+  <main id="top" class="wrap">
+    <div class="hero">
+      <div>
+        <span class="pill">Keep your place. Reclaim your RAM.</span>
+        <h1>Free up RAM without closing your apps.</h1>
+        <p class="lead">RAMsleep freezes heavy programs and trims their memory while leaving them open. Wake them when you return and pick up where you left off.</p>
+        <div class="actions"><a class="button" href="https://renegade-android.itch.io/ramsleep">Get RAMsleep on itch.io</a><span class="price">$2 · 64-bit Windows</span></div>
+      </div>
+      <img class="screen" src="ramsleep-screen.png" width="1094" height="711" alt="RAMsleep showing grouped programs, memory use, and sleep, trim, and wake controls">
+    </div>
+    <section aria-labelledby="features"><h2 id="features">A simple way to pause the heavy stuff</h2><div class="grid">
+      <div class="card"><h3>Sleep without closing</h3><p>Freeze a selected app or heavy minimized programs. Their windows stay open until you wake them.</p></div>
+      <div class="card"><h3>See programs together</h3><p>Group an app with its helper processes to see and act on the whole program.</p></div>
+      <div class="card"><h3>Wake when you return</h3><p>Interact with a sleeping program to wake it, or use Ctrl+Shift+F12 to wake everything RAMsleep put to sleep.</p></div>
+    </div></section>
+    <section aria-labelledby="details"><h2 id="details">Know before you sleep</h2><p class="muted">RAMsleep is for 64-bit Windows and requires .NET Framework 4.x. Save your work first: sleeping a program pauses its background activity. “Trim RAM” releases memory without freezing it; a busy program may take memory back. Some programs require administrator access.</p></section>
+    <section class="closing" aria-labelledby="ready"><div><h2 id="ready">Ready to make room?</h2><p class="muted">Purchase once on itch.io and download RAMsleep for Windows.</p></div><a class="button" href="https://renegade-android.itch.io/ramsleep">Buy RAMsleep for $2</a></section>
+  </main>
+  <footer class="wrap">RAMsleep · Windows desktop utility</footer>
+</body>
+</html>
